@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+#city{
+	background-color:#666666;
+	color:tomato;
+	margin:20px;
+	padding:20px;
+}
+</style>
+</head>
+<body>
+<h1 id="city">hello world</h1>
+<button onclick="mydisplay()">change</button>
+<script>
+	function mydisplay() 	
+	{	
+		var x=document.getElementById("city").innerHTML;
+		if(x=="hello world")
+		document.getElementById("city").innerHTML="have a nice day";
+		else
+		document.getElementById("city").innerHTML="hello world";
+	}
+</script>
+</body>
+</html>
